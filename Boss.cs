@@ -12,7 +12,6 @@ public class Boss : MonoBehaviour {
     public GameObject explosionPrefab;
     public int bossReward;
     public float time;
-    //Defines how many bullets the boss will endure
     public int lifeTime;
 
     bool isActive = false;
@@ -61,7 +60,6 @@ public class Boss : MonoBehaviour {
 
     void Fire()
     {
-        // Create the Bullet from the Bullet Prefab
 
         for (int i = 0; i < bulletSpawns.Length; i++){
             var bullet = (GameObject)Instantiate(
@@ -76,7 +74,6 @@ public class Boss : MonoBehaviour {
 
     }
 
-    //handle if the bullet hits an enemy
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Bullet")
