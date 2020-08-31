@@ -17,8 +17,6 @@ public class EnemyBulletScript : MonoBehaviour {
 		
 		transform.Translate(0.0f, -Time.deltaTime * speed, 0.0f);
 	}
-
-    //handle if the bullet hits a player
 	void OnCollisionEnter2D (Collision2D col)
     {
         if(col.gameObject.tag == "Player")
