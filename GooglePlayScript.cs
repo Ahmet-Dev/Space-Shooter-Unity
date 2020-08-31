@@ -40,8 +40,6 @@ public class GooglePlayScript : MonoBehaviour {
             SignIn();
 
         }
-
-        //show leader board UI
         Social.ShowLeaderboardUI();
         Debug.Log("LeaderBoard");
         //Social.ShowLeaderboardUI();
