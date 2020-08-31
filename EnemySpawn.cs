@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    //Declare variables
     public GameObject[] enemyPrefab;
     public GameObject[] bossPrefab;
     public Transform enemySpawn;
@@ -26,9 +25,7 @@ public class EnemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Select a random index of the array
         x = Random.Range(0, enemyPrefab.Length-1);
-        //Enemies will be spawned after a certain period of time
         time += Time.deltaTime;
 
         if(gameObject.tag == "EnemySpawn"){
